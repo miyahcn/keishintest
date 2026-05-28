@@ -19,7 +19,7 @@
   --team-color-dark: #2a8db0;   /* 水色の暗め */
   --team-gray: #6e7178;         /* メインのグレー（ロゴ背景・ヒーロー帯） */
   --team-gray-dark: #3a3c42;    /* グレーの暗め */
-
+ 
   --bg: #0a0a0c;                /* 黒ベース */
   --bg2: #131418;
   --bg3: #1c1e24;
@@ -31,7 +31,7 @@
   --text3: #5a5c63;
   --pdf-color: #e0533c;
 }
-
+ 
 * { margin:0; padding:0; box-sizing:border-box; }
 html, body { height: 100%; }
 body {
@@ -44,7 +44,7 @@ body {
 img { display: block; max-width: 100%; }
 button { font-family: inherit; cursor: pointer; border: none; }
 input { font-family: inherit; }
-
+ 
 body::before {
   content: '';
   position: fixed; inset: 0;
@@ -54,7 +54,7 @@ body::before {
   pointer-events: none;
   z-index: 0;
 }
-
+ 
 /* ============================================================
    ログイン画面
    ============================================================ */
@@ -139,7 +139,7 @@ body::before {
   opacity: 0; transition: opacity 0.2s;
 }
 .login-error.show { opacity: 1; }
-
+ 
 /* ============================================================
    ヘッダー
    ============================================================ */
@@ -196,7 +196,7 @@ header.compact .header-label { font-size: 9px; }
   transition: color 0.2s, border-color 0.2s;
 }
 .logout-btn:hover { color: var(--text); border-color: var(--border2); }
-
+ 
 /* ============================================================
    ヒーロー
    ============================================================ */
@@ -230,7 +230,7 @@ header.compact .header-label { font-size: 9px; }
   color: var(--team-color);
 }
 .hero-stat-label { font-size: 11px; color: var(--text3); letter-spacing: 0.05em; }
-
+ 
 /* ============================================================
    コントロール（検索・フィルター）
    ============================================================ */
@@ -244,7 +244,7 @@ header.compact .header-label { font-size: 9px; }
 }
 /* スクロール時はさらにコンパクトに */
 .controls.compact { padding: 8px 28px; top: 51px; }
-
+ 
 /* 上段：検索バー＋種類フィルター＋絞り込みボタンを1行に */
 .controls-top {
   display: flex; align-items: center; gap: 12px;
@@ -274,13 +274,13 @@ header.compact .header-label { font-size: 9px; }
 }
 #searchInput:focus { border-color: var(--team-color); }
 #searchInput::placeholder { color: var(--text3); }
-
+ 
 /* 種類フィルター（インラインで配置） */
 .type-inline {
   display: flex; gap: 6px;
   flex-wrap: wrap;
 }
-
+ 
 /* 絞り込みボタン（タグの開閉） */
 .toggle-tags-btn {
   margin-left: auto;
@@ -313,7 +313,7 @@ header.compact .header-label { font-size: 9px; }
   transition: transform 0.2s;
 }
 .toggle-tags-btn.open .arrow { transform: rotate(180deg); }
-
+ 
 /* タグエリア（折りたたみ） */
 .tags-panel {
   overflow: hidden;
@@ -364,7 +364,7 @@ header.compact .header-label { font-size: 9px; }
   color: var(--team-color);
   border-color: var(--team-color);
 }
-
+ 
 /* ============================================================
    コンテンツ行（横スクロール）
    ============================================================ */
@@ -374,7 +374,7 @@ header.compact .header-label { font-size: 9px; }
   margin: 0 28px 8px;
 }
 .result-count b { color: var(--text2); font-weight: 700; }
-
+ 
 .content-row { margin-bottom: 30px; }
 .row-head {
   display: flex; align-items: center; gap: 10px;
@@ -397,7 +397,7 @@ header.compact .header-label { font-size: 9px; }
   border-radius: 2px;
   background: var(--team-color);
 }
-
+ 
 /* 横スクロールエリア */
 .row-scroll-wrap { position: relative; }
 .row-scroll {
@@ -415,7 +415,7 @@ header.compact .header-label { font-size: 9px; }
   border-radius: 4px;
 }
 .row-scroll::-webkit-scrollbar-thumb:hover { background: var(--border2); }
-
+ 
 /* スクロール用の左右ボタン */
 .scroll-btn {
   position: absolute; top: 0; bottom: 8px;
@@ -443,7 +443,7 @@ header.compact .header-label { font-size: 9px; }
   transition: background 0.15s;
 }
 .scroll-btn:hover .scroll-btn-circle { background: var(--team-color); }
-
+ 
 /* ============================================================
    カード
    ============================================================ */
@@ -467,7 +467,7 @@ header.compact .header-label { font-size: 9px; }
   border-color: color-mix(in srgb, var(--team-color) 50%, var(--border2));
   box-shadow: 0 16px 36px rgba(0,0,0,0.45);
 }
-
+ 
 .card-thumb {
   position: relative;
   aspect-ratio: 16/9;
@@ -490,7 +490,7 @@ header.compact .header-label { font-size: 9px; }
   background: linear-gradient(135deg, color-mix(in srgb, var(--pdf-color) 16%, var(--bg3)), var(--bg2));
   color: color-mix(in srgb, var(--pdf-color) 70%, var(--text3));
 }
-
+ 
 /* 種類バッジ（動画 / PDF） */
 .type-badge {
   position: absolute; left: 8px; top: 8px;
@@ -503,7 +503,7 @@ header.compact .header-label { font-size: 9px; }
 }
 .type-badge.video { background: var(--team-color); }
 .type-badge.pdf { background: var(--pdf-color); }
-
+ 
 .card-duration {
   position: absolute; right: 8px; bottom: 8px;
   background: rgba(0,0,0,0.82);
@@ -528,7 +528,7 @@ header.compact .header-label { font-size: 9px; }
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 .card-play-circle.pdf { background: var(--pdf-color); }
-
+ 
 .card-body { padding: 14px 15px 16px; }
 .card-cat {
   font-size: 10px; font-weight: 600;
@@ -557,7 +557,7 @@ header.compact .header-label { font-size: 9px; }
   padding: 3px 8px;
   border-radius: 5px;
 }
-
+ 
 /* 空状態 */
 .empty {
   text-align: center;
@@ -566,7 +566,7 @@ header.compact .header-label { font-size: 9px; }
 }
 .empty svg { margin: 0 auto 16px; opacity: 0.5; }
 .empty p { font-size: 14px; }
-
+ 
 /* ============================================================
    モーダル
    ============================================================ */
@@ -643,7 +643,7 @@ header.compact .header-label { font-size: 9px; }
   transition: background 0.2s;
 }
 .modal-close:hover { background: rgba(0,0,0,0.9); }
-
+ 
 footer {
   padding: 28px;
   text-align: center;
@@ -652,7 +652,7 @@ footer {
   font-size: 11px;
   letter-spacing: 0.05em;
 }
-
+ 
 .loading {
   text-align: center;
   padding: 70px 20px;
@@ -668,7 +668,7 @@ footer {
   animation: spin 0.8s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
-
+ 
 @media (max-width: 600px) {
   header { padding: 12px 16px; }
   header.compact { padding: 7px 16px; }
@@ -689,7 +689,7 @@ footer {
 </style>
 </head>
 <body>
-
+ 
 <!-- ログイン画面 -->
 <div class="login-screen" id="loginScreen">
   <div class="login-box">
@@ -703,10 +703,10 @@ footer {
     <div class="login-error" id="loginError">パスワードが正しくありません</div>
   </div>
 </div>
-
+ 
 <!-- アプリ本体 -->
 <div class="app" id="app">
-
+ 
   <header>
     <div class="header-left">
       <div class="header-logo" id="headerLogo">FC</div>
@@ -717,7 +717,7 @@ footer {
     </div>
     <button class="logout-btn" id="logoutBtn">ログアウト</button>
   </header>
-
+ 
   <section class="hero">
     <div class="hero-eyebrow">Members Only</div>
     <h1 id="heroTitle">コンディショニング教材</h1>
@@ -737,7 +737,7 @@ footer {
       </div>
     </div>
   </section>
-
+ 
   <div class="controls" id="controls">
     <div class="controls-top">
       <div class="search-wrap">
@@ -769,18 +769,18 @@ footer {
       </button>
     </div>
   </div>
-
+ 
   <section class="rows-section">
     <div class="result-count" id="resultCount"></div>
     <div id="rowsContainer"></div>
   </section>
-
+ 
   <footer>
     <span id="footerText">© Training Library</span>
   </footer>
-
+ 
 </div>
-
+ 
 <!-- モーダル -->
 <div class="modal" id="modal">
   <div class="modal-box">
@@ -801,7 +801,7 @@ footer {
     </div>
   </div>
 </div>
-
+ 
 <script>
 /* ============================================================
    ★★★★★ 設定エリア（ここだけ書き換えればOK） ★★★★★
@@ -809,118 +809,114 @@ footer {
 const CONFIG = {
   // チーム名（表示用）
   teamName: "啓新高校サッカー部",
-
+ 
   // ★ワッペンロゴ：同じフォルダの logo.png を読み込む
-  //   別の画像にしたいときはここを書き換える
   logoImage: "logo.png",
-
+ 
   // ロゴ画像が読み込めないときの代替テキスト
   logoText: "KS",
-
+ 
   // ログインパスワード
   password: "keishin",
-
-  // GoogleスプレッドシートのデータAPI URL（空欄ならサンプル表示）
-dataApiUrl: "https://script.google.com/macros/s/AKfycbwHV09gYa_F-DPfh2XBzX5WBZ8FDubJH6IqPfLg-nTJrhdrd24Q6wl-ZYSdNZtztG5T/exec",
 };
-
+ 
 /* ============================================================
-   サンプルデータ（GAS未設定時の表示確認用）
-   ★ type 列で動画かPDFかを指定（video / pdf）
+   ★★★★★ 動画・PDFデータ ★★★★★
+   ここに動画やPDFを追加していく
+   
+   【追加方法】
+   下の VIDEO_DATA = [ ... ] の中に、{ } のかたまりを増やすだけ
+   一番下の ]; の前にカンマで区切って追加してね
+   
+   【各項目の意味】
+   - type        : "video"（動画）または "pdf"（PDF資料）
+   - title       : タイトル
+   - description : 説明文（空 "" でもOK）
+   - category    : カテゴリ（横スクロールの行になる）
+   - tags        : タグの配列 ["タグ1", "タグ2"]
+   - url         : Google Driveの共有リンク
+   - thumbnail   : サムネイル画像URL（空 "" でもOK）
+   - duration    : 再生時間（PDFは空 "" でOK）
    ============================================================ */
-const SAMPLE_DATA = [
+const VIDEO_DATA = [
+ 
+  // ===== 脚・股関節のケア =====
   {
-    type: "video",
-    title: "ハムストリングのストレッチ",
-    description: "座ったまま行える基本のハムストリングストレッチ。試合前のウォームアップに最適です。",
-    category: "脚・股関節",
-    tags: ["試合前", "5分以内", "初心者"],
-    url: "https://drive.google.com/file/d/SAMPLE_ID_1/preview",
+    type: "pdf",
+    title: "足関節捻挫①",
+    description: "",
+    category: "脚・股関節のケア",
+    tags: ["リハビリ", "筋トレ", "初心者"],
+    url: "https://drive.google.com/file/d/1C0edBWnAQ1ZSY7p8Hilwebt319fx4ZIg/view?usp=drive_link",
     thumbnail: "",
-    duration: "4:30"
+    duration: ""
   },
   {
     type: "pdf",
-    title: "脚のケア チェックシート",
-    description: "脚・股関節のセルフチェック項目をまとめた資料。印刷して使えます。",
-    category: "脚・股関節",
-    tags: ["初心者", "資料"],
-    url: "https://drive.google.com/file/d/SAMPLE_ID_PDF1/preview",
+    title: "足関節捻挫②",
+    description: "",
+    category: "脚・股関節のケア",
+    tags: ["リハビリ", "筋トレ", "初心者"],
+    url: "https://drive.google.com/file/d/1i-7ZnP09eQcBHDQpV1AGLY8AWtF08I2e/view?usp=drive_link",
+    thumbnail: "",
+    duration: ""
+  },
+  {
+    type: "pdf",
+    title: "足関節捻挫③",
+    description: "",
+    category: "脚・股関節のケア",
+    tags: ["リハビリ", "筋トレ", "初心者"],
+    url: "https://drive.google.com/file/d/1S1_-t9acIsbtJxIjpCZt53BjnlU1KIg2/view?usp=drive_link",
     thumbnail: "",
     duration: ""
   },
   {
     type: "video",
-    title: "股関節モビリティ",
-    description: "可動域を広げる股関節のモビリティドリル。パフォーマンス向上に効果的。",
-    category: "脚・股関節",
-    tags: ["試合前", "上級者", "体幹"],
-    url: "https://drive.google.com/file/d/SAMPLE_ID_3/preview",
-    thumbnail: "",
-    duration: "6:00"
-  },
-  {
-    type: "video",
-    title: "腰回りのリリース",
-    description: "デスクワークや長時間の移動でこわばった腰をやさしくほぐします。",
-    category: "腰・背中",
-    tags: ["クールダウン", "10分", "初心者"],
-    url: "https://drive.google.com/file/d/SAMPLE_ID_2/preview",
-    thumbnail: "",
-    duration: "8:15"
-  },
-  {
-    type: "video",
-    title: "背中の疲労回復ストレッチ",
-    description: "練習後の背中の疲労を取り除く全身連動ストレッチ。",
-    category: "腰・背中",
-    tags: ["試合後", "クールダウン", "10分"],
-    url: "https://drive.google.com/file/d/SAMPLE_ID_4/preview",
-    thumbnail: "",
-    duration: "9:45"
-  },
-  {
-    type: "pdf",
-    title: "腰痛予防 トレーニングメニュー",
-    description: "腰・背中の不調を予防するための週間トレーニングメニュー表。",
-    category: "腰・背中",
-    tags: ["資料", "上級者"],
-    url: "https://drive.google.com/file/d/SAMPLE_ID_PDF2/preview",
+    title: "足関節捻挫後筋トレ①",
+    description: "",
+    category: "脚・股関節のケア",
+    tags: ["リハビリ", "筋トレ", "初心者"],
+    url: "https://drive.google.com/file/d/18x7eHQ0tQiAWbA0wKAxMU1cwkeBQeZKt/view?usp=drive_link",
     thumbnail: "",
     duration: ""
   },
   {
     type: "video",
-    title: "全身リカバリールーティン",
-    description: "1日の終わりに行う全身のリカバリープログラム。睡眠の質向上にも。",
-    category: "全身ストレッチ",
-    tags: ["試合後", "クールダウン", "上級者"],
-    url: "https://drive.google.com/file/d/SAMPLE_ID_5/preview",
+    title: "足関節捻挫後筋トレ②",
+    description: "",
+    category: "脚・股関節のケア",
+    tags: ["リハビリ", "筋トレ", "初心者"],
+    url: "https://drive.google.com/file/d/1Tqq9fVyTvN6gyOjr_Z7KwpweI-Z1amZV/view?usp=drive_link",
     thumbnail: "",
-    duration: "15:20"
+    duration: ""
   },
   {
     type: "video",
-    title: "朝の活性化ストレッチ",
-    description: "朝の身体を目覚めさせる短時間の全身ストレッチ。",
-    category: "全身ストレッチ",
-    tags: ["ウォームアップ", "5分以内", "初心者"],
-    url: "https://drive.google.com/file/d/SAMPLE_ID_6/preview",
-    thumbnail: "",
-    duration: "3:50"
-  },
-  {
-    type: "pdf",
-    title: "コンディショニング 基礎ガイド",
-    description: "ストレッチ全般の考え方と注意点をまとめた入門資料。",
-    category: "全身ストレッチ",
-    tags: ["資料", "初心者"],
-    url: "https://drive.google.com/file/d/SAMPLE_ID_PDF3/preview",
+    title: "足関節捻挫後可動域",
+    description: "",
+    category: "脚・股関節のケア",
+    tags: ["リハビリ", "筋トレ", "初心者"],
+    url: "https://drive.google.com/file/d/1mDOEmx3gUIPL587Yi2YPPu3x515sEU8x/view?usp=drive_link",
     thumbnail: "",
     duration: ""
-  }
+  },
+  {
+    type: "video",
+    title: "足関節捻挫後バランス",
+    description: "",
+    category: "脚・股関節のケア",
+    tags: ["リハビリ", "筋トレ", "初心者"],
+    url: "https://drive.google.com/file/d/1S4YrYPmhrrX56YH_dMltDTp31H8jepOm/view?usp=drive_link",
+    thumbnail: "",
+    duration: ""
+  },
+ 
+  // ↓↓↓ 新しい動画・PDFはここに追加 ↓↓↓
+  // 上の { ... }, をコピペして書き換えると簡単
+ 
 ];
-
+ 
 /* ============================================================
    ↓↓↓ 以下はプログラム本体（編集不要） ↓↓↓
    ============================================================ */
@@ -928,16 +924,16 @@ let allItems = [];
 let activeType = "all";       // all / video / pdf
 let activeTags = new Set();
 let searchText = "";
-
+ 
 function init() {
   document.title = CONFIG.teamName + " | Training Library";
   document.getElementById('loginTeamName').textContent = CONFIG.teamName;
   document.getElementById('headerTeam').textContent = CONFIG.teamName;
   document.getElementById('footerText').textContent = "© " + CONFIG.teamName + " Training Library";
-
+ 
   setLogo(document.getElementById('loginLogo'));
   setLogo(document.getElementById('headerLogo'));
-
+ 
   document.getElementById('loginBtn').addEventListener('click', tryLogin);
   document.getElementById('passwordInput').addEventListener('keydown', e => {
     if (e.key === 'Enter') tryLogin();
@@ -954,7 +950,7 @@ function init() {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeModal();
   });
-
+ 
   // 「絞り込み」ボタン：タグパネルの開閉
   document.getElementById('toggleTagsBtn').addEventListener('click', () => {
     const panel = document.getElementById('tagsPanel');
@@ -962,7 +958,7 @@ function init() {
     panel.classList.toggle('open');
     btn.classList.toggle('open');
   });
-
+ 
   // タグクリアボタン
   document.getElementById('clearTagsBtn').addEventListener('click', () => {
     activeTags.clear();
@@ -970,7 +966,7 @@ function init() {
     updateTagBadge();
     render();
   });
-
+ 
   // スクロールでヘッダー・コントロールをコンパクトに
   let lastY = 0;
   window.addEventListener('scroll', () => {
@@ -981,7 +977,7 @@ function init() {
     lastY = y;
   }, { passive: true });
 }
-
+ 
 function setLogo(el) {
   if (CONFIG.logoImage) {
     el.innerHTML = '<img src="' + CONFIG.logoImage + '" alt="logo">';
@@ -989,7 +985,7 @@ function setLogo(el) {
     el.textContent = CONFIG.logoText;
   }
 }
-
+ 
 // ---- ログイン ----
 function tryLogin() {
   const input = document.getElementById('passwordInput').value;
@@ -1012,72 +1008,25 @@ function showApp() {
   document.getElementById('app').classList.add('visible');
   loadData();
 }
-
-// ---- データ読み込み（JSONPでCORS回避） ----
-async function loadData() {
-  const container = document.getElementById('rowsContainer');
-  container.innerHTML = '<div class="loading"><div class="spinner"></div>読み込んでいます...</div>';
-
-  if (CONFIG.dataApiUrl) {
-    try {
-      allItems = await fetchViaJsonp(CONFIG.dataApiUrl);
-    } catch (err) {
-      console.error('データ取得エラー:', err);
-      container.innerHTML = '<div class="empty"><p>データの読み込みに失敗しました</p></div>';
-      allItems = [];
-    }
-  } else {
-    allItems = SAMPLE_DATA;
-  }
-
-  // データの整形
+ 
+// ---- データ読み込み（HTML埋め込みデータから） ----
+function loadData() {
+  allItems = VIDEO_DATA.slice(); // 配列をコピー
+ 
+  // データの整形（念のため）
   allItems.forEach(v => {
     if (typeof v.tags === 'string') {
       v.tags = v.tags.split(',').map(t => t.trim()).filter(Boolean);
     }
     if (!Array.isArray(v.tags)) v.tags = [];
     v.type = (v.type || 'video').toLowerCase();
-    if (!v.url && v.videoUrl) v.url = v.videoUrl;
   });
-
+ 
   buildFilters();
   updateStats();
   render();
 }
-
-// JSONPでGASを呼び出す（CORS制限を回避）
-function fetchViaJsonp(url) {
-  return new Promise((resolve, reject) => {
-    const cbName = 'jsonpCb_' + Date.now() + '_' + Math.floor(Math.random() * 10000);
-    const sep = url.includes('?') ? '&' : '?';
-    const fullUrl = url + sep + 'callback=' + cbName;
-
-    const script = document.createElement('script');
-    const timer = setTimeout(() => {
-      cleanup();
-      reject(new Error('タイムアウト'));
-    }, 15000);
-
-    function cleanup() {
-      clearTimeout(timer);
-      delete window[cbName];
-      if (script.parentNode) script.parentNode.removeChild(script);
-    }
-
-    window[cbName] = (data) => {
-      cleanup();
-      resolve(data);
-    };
-
-    script.onerror = () => {
-      cleanup();
-      reject(new Error('スクリプト読み込み失敗'));
-    };
-    script.src = fullUrl;
-    document.body.appendChild(script);
-  });
-}
-
+ 
 // ---- フィルターUI生成 ----
 function buildFilters() {
   // 種類フィルター
@@ -1099,7 +1048,7 @@ function buildFilters() {
     });
     typeBox.appendChild(chip);
   });
-
+ 
   // タグフィルター
   const allTags = new Set();
   allItems.forEach(v => v.tags.forEach(t => allTags.add(t)));
@@ -1119,7 +1068,7 @@ function buildFilters() {
     tagBox.appendChild(chip);
   });
 }
-
+ 
 function updateStats() {
   document.getElementById('statVideo').textContent =
     allItems.filter(v => v.type === 'video').length;
@@ -1128,7 +1077,7 @@ function updateStats() {
   document.getElementById('statCat').textContent =
     new Set(allItems.map(v => v.category).filter(Boolean)).size;
 }
-
+ 
 // 絞り込みボタンに、選択中タグ数のバッジを表示
 function updateTagBadge() {
   const badge = document.getElementById('tagCountBadge');
@@ -1146,7 +1095,7 @@ function updateTagBadge() {
     clearBtn.style.display = 'none';
   }
 }
-
+ 
 // ---- 絞り込み ----
 function getFiltered() {
   return allItems.filter(v => {
@@ -1163,20 +1112,20 @@ function getFiltered() {
     return true;
   });
 }
-
+ 
 function escapeHtml(s) {
   return String(s || '').replace(/[&<>"']/g, c => ({
     '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
   }[c]));
 }
-
+ 
 // ---- 描画（カテゴリごとに横スクロールの行） ----
 function render() {
   const list = getFiltered();
   const container = document.getElementById('rowsContainer');
   document.getElementById('resultCount').innerHTML =
     '<b>' + list.length + '</b> 件';
-
+ 
   if (list.length === 0) {
     container.innerHTML =
       '<div class="empty">' +
@@ -1185,7 +1134,7 @@ function render() {
       '<p>該当するコンテンツが見つかりません</p></div>';
     return;
   }
-
+ 
   // カテゴリごとにグループ化
   const groups = {};
   const order = [];
@@ -1194,18 +1143,18 @@ function render() {
     if (!groups[cat]) { groups[cat] = []; order.push(cat); }
     groups[cat].push(v);
   });
-
+ 
   container.innerHTML = '';
   order.forEach(cat => {
     container.appendChild(buildRow(cat, groups[cat]));
   });
 }
-
+ 
 // 1行分（カテゴリ行）を作る
 function buildRow(catName, items) {
   const row = document.createElement('div');
   row.className = 'content-row';
-
+ 
   // 見出し
   const head = document.createElement('div');
   head.className = 'row-head';
@@ -1214,24 +1163,24 @@ function buildRow(catName, items) {
     '<div class="row-title">' + escapeHtml(catName) + '</div>' +
     '<div class="row-count">' + items.length + '</div>';
   row.appendChild(head);
-
+ 
   // スクロールエリア
   const wrap = document.createElement('div');
   wrap.className = 'row-scroll-wrap';
-
+ 
   const scroll = document.createElement('div');
   scroll.className = 'row-scroll';
   items.forEach((v, i) => scroll.appendChild(buildCard(v, i)));
-
+ 
   // 左右ボタン
   const leftBtn = makeScrollBtn('left', scroll);
   const rightBtn = makeScrollBtn('right', scroll);
-
+ 
   wrap.appendChild(leftBtn);
   wrap.appendChild(scroll);
   wrap.appendChild(rightBtn);
   row.appendChild(wrap);
-
+ 
   // ボタンの有効/無効をスクロール位置で切り替え
   const updateBtns = () => {
     leftBtn.disabled = scroll.scrollLeft <= 4;
@@ -1240,10 +1189,10 @@ function buildRow(catName, items) {
   };
   scroll.addEventListener('scroll', updateBtns);
   setTimeout(updateBtns, 100);
-
+ 
   return row;
 }
-
+ 
 function makeScrollBtn(dir, scrollEl) {
   const btn = document.createElement('button');
   btn.className = 'scroll-btn ' + dir;
@@ -1260,19 +1209,19 @@ function makeScrollBtn(dir, scrollEl) {
   });
   return btn;
 }
-
+ 
 // カード1枚を作る
 function buildCard(v, i) {
   const card = document.createElement('div');
   card.className = 'card';
   card.style.animationDelay = (i * 0.04) + 's';
-
+ 
   const isPdf = v.type === 'pdf';
-
+ 
   const thumb = v.thumbnail
     ? '<img src="' + encodeURI(v.thumbnail) + '" alt="" onerror="this.style.display=\'none\'">'
     : '';
-
+ 
   const fallbackIcon = isPdf
     ? '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/>'
     : '<path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/>';
@@ -1280,18 +1229,18 @@ function buildCard(v, i) {
     '<div class="card-thumb-fallback' + (isPdf ? ' pdf' : '') + '">' +
     '<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">' +
     fallbackIcon + '</svg></div>';
-
+ 
   const badge = isPdf
     ? '<span class="type-badge pdf">📄 PDF</span>'
     : '<span class="type-badge video">▶ 動画</span>';
-
+ 
   const playIcon = isPdf
     ? '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="none" stroke="#fff" stroke-width="2"/><path d="M14 2v6h6" fill="none" stroke="#fff" stroke-width="2"/>'
     : '<path d="M8 5v14l11-7z"/>';
-
+ 
   const tags = v.tags.slice(0, 3).map(t =>
     '<span class="card-tag">#' + escapeHtml(t) + '</span>').join('');
-
+ 
   card.innerHTML =
     '<div class="card-thumb">' +
       fallback + thumb +
@@ -1307,11 +1256,11 @@ function buildCard(v, i) {
       (v.description ? '<div class="card-desc">' + escapeHtml(v.description) + '</div>' : '') +
       '<div class="card-tags">' + tags + '</div>' +
     '</div>';
-
+ 
   card.addEventListener('click', () => openModal(v));
   return card;
 }
-
+ 
 // ---- モーダル ----
 function openModal(v) {
   const isPdf = v.type === 'pdf';
@@ -1320,11 +1269,11 @@ function openModal(v) {
   document.getElementById('modalDesc').textContent = v.description || '';
   document.getElementById('modalTags').innerHTML =
     v.tags.map(t => '<span class="modal-tag">#' + escapeHtml(t) + '</span>').join('');
-
+ 
   const viewer = document.getElementById('modalViewer');
   viewer.className = 'modal-viewer ' + (isPdf ? 'pdf' : 'video');
   document.getElementById('modalIframe').src = toEmbedUrl(v.url);
-
+ 
   // PDFのときは「別タブで開く」リンクを出す
   const openWrap = document.getElementById('modalOpenWrap');
   if (isPdf) {
@@ -1336,15 +1285,15 @@ function openModal(v) {
   } else {
     openWrap.innerHTML = '';
   }
-
+ 
   document.getElementById('modal').classList.add('open');
 }
-
+ 
 function closeModal() {
   document.getElementById('modal').classList.remove('open');
   document.getElementById('modalIframe').src = '';
 }
-
+ 
 // Google DriveのURLを埋め込み表示用に変換（動画・PDF共通）
 function toEmbedUrl(url) {
   if (!url) return '';
@@ -1352,8 +1301,9 @@ function toEmbedUrl(url) {
   if (m) return 'https://drive.google.com/file/d/' + m[1] + '/preview';
   return url;
 }
-
+ 
 init();
 </script>
 </body>
 </html>
+ 
